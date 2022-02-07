@@ -1,0 +1,29 @@
+---
+---
+
+<!DOCTYPE html>
+<!--suppress ALL, SyntaxError -->
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+<div class="container-fluid">
+    <header class="py-2">
+        <div class="row">
+            {% include header.html %}
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            {{ content }}
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            footer
+        </div>
+    </footer>
+</div>
+</body>
+</html>

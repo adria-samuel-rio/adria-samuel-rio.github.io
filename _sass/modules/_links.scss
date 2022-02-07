@@ -1,0 +1,27 @@
+.link {
+  &__text {
+    color: initial;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 0.7rem;
+      width: 0;
+      background-color: rgba($color-main, 0.3);
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: width .3s ease;
+    }
+  }
+
+  &:hover &__text:after {
+    width: 100%;
+  }
+
+  &--light &__text:after {
+    background-color: rgba($color-main, 0.1);
+  }
+}
