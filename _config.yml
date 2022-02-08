@@ -8,7 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: <!--more-->
 
-    
 defaults:
 - scope:
     path:     "" # an empty string here means all files in the project
@@ -22,7 +21,7 @@ defaults:
     path: "**/_posts"
   values:
     permalink: /:categories/:slug
-    layout:     "producte"
+    layout:     "product"
 
 include:
   - _pages
