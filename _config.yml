@@ -33,5 +33,4 @@ sass:
   style: compressed
   load_paths:
     - assets/css
-    - assets/css/bootstrap
-    - _sass
+    - node_modules
