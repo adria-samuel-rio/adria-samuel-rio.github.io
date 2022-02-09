@@ -1,5 +1,11 @@
-_site
-.sass-cache
+# Folders
+_site/
+!node_modules/
+node_modules/*
+!node_modules/bootstrap/
+vendor
+
+# Files
 .jekyll-cache
 .jekyll-metadata
-vendor
+.sass-cache
