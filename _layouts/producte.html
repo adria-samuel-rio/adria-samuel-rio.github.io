@@ -15,7 +15,8 @@ layout: default
             <p class="mt-4 fs-2 fw-bold"><sup class="fs-6">preu:</sup> {{ page.price }}€</p>
 
             <div class="mb-4">
-                <a type="button" class="btn btn-dark btn-lg" href="https://telegram.me/Natupatu?text=urlencodedtext" target="_blank">Fer comanda</a>
+                {% assign missatge = 'Hola! Voldria fer una comanda de: ' | append: page.title | url_encode %}
+                <a type="button" class="btn btn-dark btn-lg" href="https://wa.me/+34649430171/?text={{ missatge }}" target="_blank">Fer comanda</a>
             </div>
 
             <dl class="row">
