@@ -1,8 +1,11 @@
 ---
 ---
 
+@import "bootstrapVariables";
+@import "bootstrap/scss/bootstrap";
+
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 h1, h2 {
   font-family: 'Playfair Display', serif;
@@ -10,4 +13,10 @@ h1, h2 {
 
 dl {
   font-size: 0.9rem;
+}
+
+@include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 4rem;
+  }
 }
