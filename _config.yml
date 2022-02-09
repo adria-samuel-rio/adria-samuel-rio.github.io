@@ -32,6 +32,5 @@ plugins:
 sass:
   style: compressed
   load_paths:
-    - C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/bootstrap-5.0.2/assets/stylesheets
     - assets/css
     - _sass
