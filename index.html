@@ -1,10 +1,32 @@
 ---
-custom_css: home
 layout: home
 ---
 
-{% for post in site.posts %}
-<li>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
+<div class="container">
+	<div class="row">
+		<div class="offset-2 col-8">
+			<div class="row">
+				{% for category in site.categories %}
+				<h2 class="h2 text-center text-white my-5">{{ category[0] | capitalize }}</h2>
+
+					{% for post in category[1] %}
+					<div class="col-12 col-sm-4">
+						<div class="card text-white bg-dark mb-4 text-center">
+							<!--<img src="https://via.placeholder.com/600" class="card-img-top" alt="...">-->
+							<img src="{{ site.url }}/assets/images/600x400.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<a href="{{ post.url }}" class="btn btn-link stretched-link fw-bold text-decoration-none">
+									<h2 class="h3 card-title">{{ post.title }}</h2>
+								</a>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk
+									of the card's content.</p>
+								<p class="fw-bold">{{ post.price }} €</span>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
