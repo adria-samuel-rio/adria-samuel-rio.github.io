@@ -1,0 +1,22 @@
+---
+label: Producte
+hide_body: false
+fields:
+- type: text
+  name: formatted-title
+  label: formatted-title
+- type: text
+  name: categories
+  label: categories
+- type: number
+  name: price
+  label: price
+- type: textarea
+  name: product-ingredients
+  label: product-ingredients
+- type: text
+  name: product-allergies
+  label: product-allergies
+- type: text
+  name: product-preserving
+  label: product-preserving
