@@ -7,7 +7,7 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-  new_doc_ext: ".html"
+  new_doc_ext: html
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
@@ -17,9 +17,8 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
-  install_dependencies_command: bundle install --path vendor/bundle
+  install_dependencies_command: bundle install
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
-    -d _site
+  instant_preview_command: bundle exec jekyll serve
