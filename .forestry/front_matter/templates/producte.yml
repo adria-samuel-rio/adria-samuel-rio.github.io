@@ -1,7 +1,6 @@
 ---
 label: Producte
 hide_body: false
-display_field: categories
 fields:
 - type: text
   name: formatted-title
