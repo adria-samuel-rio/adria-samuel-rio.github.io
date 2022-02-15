@@ -20,3 +20,5 @@ fields:
 - type: text
   name: product-preserving
   label: product-preserving
+pages:
+- _posts/Test.html
