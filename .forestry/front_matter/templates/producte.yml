@@ -4,21 +4,23 @@ hide_body: false
 fields:
 - type: text
   name: formatted-title
-  label: formatted-title
+  label: Títol 2
 - type: text
   name: categories
-  label: categories
+  label: Categoria
+  config:
+    required: true
 - type: number
   name: price
-  label: price
+  label: Preu
 - type: textarea
   name: product-ingredients
-  label: product-ingredients
+  label: Ingredients
 - type: text
   name: product-allergies
-  label: product-allergies
+  label: Al·lèrgies
 - type: text
   name: product-preserving
-  label: product-preserving
+  label: Conservació
 pages:
 - _posts/Test.html
