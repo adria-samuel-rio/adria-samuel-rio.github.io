@@ -1,12 +1,13 @@
-<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/node_modules/@popperjs/core/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/js/main.js' | prepend: site.baseurl}}"></script>
+
 <script>
-    $("input[type='number']").inputSpinner({
+    $(document).ready(function() {
+        console.log("jquery works");
+    });
+    /*$("input[type='number']").inputSpinner({
         buttonsClass: 'btn-outline-dark',
         decrementButton: '<i class="bi bi-dash-lg"></i>',
         incrementButton: '<i class="bi bi-plus-lg"></i>',
         buttonsWidth: '3.5rem'
-    });
+    });*/
 </script>

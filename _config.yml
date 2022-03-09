@@ -25,7 +25,6 @@ defaults:
 
 include:
   - _pages
-  - node_modules
 
 plugins:
   - jekyll-feed
