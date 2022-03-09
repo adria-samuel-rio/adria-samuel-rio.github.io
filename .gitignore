@@ -1,9 +1,6 @@
-# Folders
-_site/
-node_modules/
-
-# Files
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
 Gemfile.lock
+_site/
+node_modules/
