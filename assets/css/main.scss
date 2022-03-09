@@ -1,9 +1,11 @@
 ---
 ---
 
-@import "bootstrapVariables";
-@import "bootstrap/scss/bootstrap";
-@import "bootstrapOverride";
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+
+@import 'bootstrapVariables';
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrapOverride';
 
 h1,
 h2 {
@@ -17,7 +19,6 @@ h2 {
 .h3 {
     font-size: 1.5rem;
 }
-
 
 /*.card .btn-link {
     position: relative;

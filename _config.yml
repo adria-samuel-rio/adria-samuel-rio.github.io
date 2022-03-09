@@ -9,25 +9,26 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: <!--more-->
 
 defaults:
-- scope:
-    path:     "" # an empty string here means all files in the project
-  values:
-    layout:   "default"
-- scope:
-    path: "_pages"
-  values:
-    permalink: /:basename
-- scope:
-    path: "**/_posts"
-  values:
-    permalink: /:categories/:slug
-    layout:     "producte"
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename
+  - scope:
+      path: "**/_posts"
+    values:
+      permalink: /:categories/:slug
+      layout: "producte"
 
 include:
   - _pages
+  - node_modules
 
 plugins:
-- jekyll-feed
+  - jekyll-feed
 
 sass:
   style: compressed
