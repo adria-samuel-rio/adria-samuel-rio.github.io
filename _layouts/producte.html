@@ -5,32 +5,38 @@ layout: default-fluid
 
 <div class="offset-sm-4 col-sm-6">{% include breadcrumbs.html %}</div>
 <div class="col-12 col-sm-5 mt-5 p-0 position-absolute d-none d-sm-block" style="z-index: -1">
-    <img src="{{ site.url }}/assets/images/600x400.png" alt="{{ page.title }}" class="img-fluid" />
+    <img src="{{ site.url }}/assets/images/600x400.png" alt="{{ page.title }}" class="img-fluid"/>
 </div>
 <div class="offset-sm-4 col-sm-6">
     <h1 class="mb-4 d-none d-sm-block">{{ page.formatted-title | default: page.title }}</h1>
     <h1 class="mb-4 d-block d-sm-none">{{ page.title }}</h1>
-    <img src="{{ site.url }}/assets/images/600x400.png" alt="{{ page.title }}" class="img-fluid d-block d-sm-none mb-3" />
+    <img src="{{ site.url }}/assets/images/600x400.png" alt="{{ page.title }}" class="img-fluid d-block d-sm-none mb-3"/>
     <div class="row">
         <div class="col-12 offset-sm-3 col-sm-9">
             {{ content }}
 
-            <h2 class="mt-4">{{ page.price }} € <span class="fs-5">/ {{ page.price-info }}</span></h2>
+            <h2 class="mt-4">{{ page.price }}
+                €
+                <span class="fs-5">/
+                    {{ page.price-info }}</span>
+            </h2>
 
-            <div class="col-4 mb-3">
-                <p>Quantes caixes vols?</p>
-                <input type="number" value="1" min="1" max="10" class="border-0"/>
+            <p class="mb-2 mt-3">Quantes caixes vols?</p>
+            <div class="col-3 mb-3">
+                <div class="input-group  ">
+                    <button class="btn btn-decrement btn-outline-dark btn-minus px-1 rounded-circle" style="min-width: 2.5rem" type="button">
+                        <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <input class="form-control border-0 text-center" max="10" min="1" type="number" value="1">
+                    <button class="btn btn-increment btn-outline-dark btn-plus px-1 rounded-circle" style="min-width: 2.5rem" type="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
             </div>
 
             <div class="mb-4">
                 {% assign missatge = 'Hola! Voldria fer una comanda de: ' | append: page.title | url_encode %}
-                <a
-                    type="button"
-                    class="btn btn-dark btn-lg col-12 text-uppercase"
-                    href="https://wa.me/+34649430171/?text={{ missatge }}"
-                    target="_blank"
-                    >Fer comanda</a
-                >
+                <a class="btn btn-dark btn-lg col-12 text-uppercase" href="https://wa.me/+34649430171/?text={{ missatge }}" target="_blank" type="button">Fer comanda</a>
             </div>
 
             <dl class="row">
@@ -47,5 +53,5 @@ layout: default-fluid
     </div>
 </div>
 <div class="col-sm-3">
-    <img src="" alt="" />
+    <img alt="" src=""/>
 </div>
