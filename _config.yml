@@ -25,6 +25,11 @@ defaults:
 
 include:
   - _pages
+exclude:
+  - src
+  - package.json
+  - package-lock.json
+  - webpack.*.js
 
 plugins:
   - jekyll-feed

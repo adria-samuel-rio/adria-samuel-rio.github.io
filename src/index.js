@@ -1,5 +1,4 @@
-"use strict";
-
+import './index.scss';
 import $ from 'jquery';
 
 $(".btn-plus, .btn-minus").on("click", function (e) {

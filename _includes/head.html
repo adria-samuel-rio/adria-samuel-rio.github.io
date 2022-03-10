@@ -1,15 +1,20 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{{ site.title}}{% if page.title %}{{ page.title | prepend: ' - ' }}{% endif %}</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>{{ site.title}}
+    {% if page.title %}
+        {{ page.title | prepend: ' - ' }}
+    {% endif %}
+</title>
 
-<link rel="stylesheet" href="/assets/css/main.css" />
+<link href="/assets/css/main.css" rel="stylesheet"/>
+<link href="/assets/dist/main.css" rel="stylesheet"/>
 
 {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
-        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" />
+        <link href="/assets/css/{{ stylesheet }}.css" rel="stylesheet"/>
     {% endfor %}
 {% endif %}
 {% if layout.custom_css %}
     {% for stylesheet in layout.custom_css %}
-        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" />
+        <link href="/assets/css/{{ stylesheet }}.css" rel="stylesheet"/>
     {% endfor %}
 {% endif %}
