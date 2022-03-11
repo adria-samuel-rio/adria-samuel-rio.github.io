@@ -5,16 +5,4 @@
     {% endif %}
 </title>
 
-<link href="/assets/css/main.css" rel="stylesheet"/>
 <link href="/assets/dist/main.css" rel="stylesheet"/>
-
-{% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-        <link href="/assets/css/{{ stylesheet }}.css" rel="stylesheet"/>
-    {% endfor %}
-{% endif %}
-{% if layout.custom_css %}
-    {% for stylesheet in layout.custom_css %}
-        <link href="/assets/css/{{ stylesheet }}.css" rel="stylesheet"/>
-    {% endfor %}
-{% endif %}

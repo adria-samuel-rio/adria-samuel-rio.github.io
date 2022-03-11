@@ -26,16 +26,14 @@ defaults:
 include:
   - _pages
 exclude:
-  - src
-  - package.json
-  - package-lock.json
+  - package*.json
   - webpack.*.js
 
 plugins:
   - jekyll-feed
-
-sass:
-  style: compressed
-  load_paths:
-    - assets/css
-    - node_modules
+#######################################
+#sass:
+#  style: compressed
+#  load_paths:
+#    - assets/css
+#    - node_modules
